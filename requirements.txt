@@ -1,0 +1,7 @@
+numpy~=1.23.5
+torch>=2.2
+torchvision~=0.17.0
+owlready2~=0.47
+pandas
+semantic-loss-pytorch @ git+https://github.com/lucadiliello/semantic-loss-pytorch.git
+PySDD

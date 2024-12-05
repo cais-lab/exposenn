@@ -1,0 +1,38 @@
+Prefix(:=<http://cais.iias.spb.su/ontologies/2024/demo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://cais.iias.spb.su/ontologies/2024/demo>
+
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#A>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#AorB>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#B>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#C>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#Class1>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#Class2>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#D>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#E>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#F>))
+Declaration(Class(<http://cais.iias.spb.su/ontologies/2024/demo#G>))
+############################
+#   Classes
+############################
+
+# Class: <http://cais.iias.spb.su/ontologies/2024/demo#AorB> (<http://cais.iias.spb.su/ontologies/2024/demo#AorB>)
+
+EquivalentClasses(<http://cais.iias.spb.su/ontologies/2024/demo#AorB> ObjectUnionOf(<http://cais.iias.spb.su/ontologies/2024/demo#A> <http://cais.iias.spb.su/ontologies/2024/demo#B>))
+
+# Class: <http://cais.iias.spb.su/ontologies/2024/demo#C> (<http://cais.iias.spb.su/ontologies/2024/demo#C>)
+
+DisjointClasses(<http://cais.iias.spb.su/ontologies/2024/demo#C> <http://cais.iias.spb.su/ontologies/2024/demo#D>)
+
+# Class: <http://cais.iias.spb.su/ontologies/2024/demo#Class1> (<http://cais.iias.spb.su/ontologies/2024/demo#Class1>)
+
+SubClassOf(<http://cais.iias.spb.su/ontologies/2024/demo#Class1> ObjectIntersectionOf(<http://cais.iias.spb.su/ontologies/2024/demo#AorB> <http://cais.iias.spb.su/ontologies/2024/demo#C>))
+
+
+)
